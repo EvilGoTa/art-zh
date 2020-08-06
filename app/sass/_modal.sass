@@ -1,0 +1,69 @@
+.modal
+  &.display
+    display: flex
+    animation-duration: .3s
+    animation-name: animFadeIn
+  background-color: rgba(#000, .4)
+  position: fixed
+  width: 100vw
+  height: 100vh
+  top: 0
+  z-index: 999
+  display: none
+  justify-content: center
+  align-items: center
+  .modal__close
+    position: absolute
+    top: 42px
+    right: 42px
+    cursor: pointer
+    img
+      transition: transform .3s
+      &:hover
+        transform: rotate(180deg)
+  .modal__wrapper
+    position: relative
+    background-color: $white
+    padding: 70px
+    color: $black
+    width: 808px
+
+  .modal__footer
+    color: $white
+    margin-top: 80px
+    text-align: center
+
+.modal_header
+  margin-bottom: 50px
+
+//.form-label
+//  font-weight: 600
+//  font-size: 20px
+//  line-height: 19px
+//  margin: 0
+//
+//.form-input
+//  display: block
+//  width: 100%
+//  border: 0
+//  border-bottom: 2px solid #ECECEC
+//  padding: 13px 0
+//  margin-bottom: 37px
+//  font-size: 20px
+//  line-height: 19px
+//  &::placeholder
+//    color: #A4A4AC
+
+.load-file-wrapper
+  height: 60px
+.load-file-wrapper label
+  cursor: pointer
+  pointer-events: auto
+.load-file-wrapper img
+  width: 16px
+  height: 26px
+  margin-right: 5px
+
+
+.load-file
+  display: none

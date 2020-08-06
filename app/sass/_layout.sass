@@ -1,0 +1,148 @@
+.container
+    background: url('../images/dest/bg-tile.png') repeat center
+    max-width: 1600px
+    margin: auto
+    padding: 0
+
+    &.container-footer
+        padding: 0 226px
+    
+.logo
+    padding: 40px 20px
+    img
+        width: 87px
+        height: auto
+    
+.header
+    width: 100%
+    max-width: 1600px
+    display: flex
+    position: fixed
+    justify-content: space-between
+    z-index: 1
+
+.content-wrapper
+    display: flex
+    padding-top: 222px
+    margin: 0 130px
+
+.padding-100
+    padding: 0 100px
+
+.content
+    padding-left: 100px
+    padding-right: 100px
+    z-index: 2
+
+.content__index
+    padding-left: 0
+    padding-right: 0
+
+.header-wrappper
+    margin-bottom: 200px
+
+    &.header-wrappper_index
+        padding-left: 100px
+        padding-right: 100px
+        margin-bottom: 90px
+        height: calc(100vh - 222px)
+
+
+.menu
+    width: 130px
+    ul
+        display: flex
+        flex-direction: column-reverse
+        list-style: none
+        color: $text
+        padding: 0
+        margin: 0
+        margin-top: -65px
+
+.menu-vertical
+    ul
+        padding: 20px 50px
+    .menu-vertical__item
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
+        margin-top: 75px
+        color: $grey
+        a
+            mix-blend-mode: difference
+            transition: .3s
+            &:hover
+                color: white
+                text-shadow: 0 0 2px rgba(255, 255, 255, 1)
+    .menu-vertical__item-animate
+        img
+            transition: bottom .3s
+        &:hover img
+            bottom: -33px
+    &.menu-vertical__item-active
+        color: $white
+    .menu-vertical__arrow
+        transform: rotate(180deg)
+        position: absolute
+        right: 3px
+        bottom: -23px
+    .menu-vertical_logo-placer
+        margin-top: 10px
+    &.menu-vertical_top-placer
+        padding-top: 227px
+
+
+.menu-arrow-up
+    width: 22px
+    height: 23px
+
+.breadcrumbs
+    span
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            background-color: $accent
+            height: 32px
+            width: 2px
+            right: -14px        
+            top: -6px
+            animation-duration: 2s
+            animation-name: flash
+            animation-iteration-count: infinite
+
+.description
+    color: $grey
+    line-height: 24px
+    float: right
+    width: 295px
+    margin-top: -20px
+
+
+.footer
+    background: $white
+    color: $black
+    padding: 120px 0 40px
+
+    .footer__header
+        margin-bottom: 80px
+
+    .footer__body
+        margin-bottom: 80px
+
+    .footer__footer
+
+    .footer__text
+        font-size: 14px
+        line-height: 13px
+        color: $grey
+
+.contact
+    .contact__phone
+        font-weight: bold
+        font-size: 16px
+        line-height: 15px
+        margin-bottom: 14px
+    .contact__worktime
+        font-size: 16px
+        line-height: 15px
+        color: $grey

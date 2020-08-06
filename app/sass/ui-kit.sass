@@ -1,0 +1,111 @@
+a 
+    color: inherit
+    &:hover
+        color: inherit
+        text-decoration: none
+    &:visited
+        color: inherit
+    
+h1 
+    font-family: $montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 80px
+    line-height: 100px
+    color: $text
+    margin-top: 30px
+    margin-bottom: 65px
+
+h2 
+    font-family: $montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 48px
+    line-height: 72px
+
+h3 
+    font-family: $gotham-pro
+    font-style: normal
+    font-weight: bold
+    font-size: 28px
+    line-height: 32px
+
+.hint   
+    font-family: $gotham-pro
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+
+.button
+    transition: .3s
+    font-family: $gotham-pro
+    font-style: normal
+    font-weight: 500
+    line-height: 24px
+    color: $white
+    border-radius: 4px
+
+.button-red
+    padding: 12px 52px
+    background: #E93750
+    &:hover
+        box-shadow: 0px 0px 15px rgba(233, 55, 80, 1)
+    &:hover, &:focus
+        background: #FF405B
+    &:active 
+        background: #C1263C
+
+.button-grey
+    padding: 12px 30px
+    background: #2B2C30
+    &:hover, &:focus
+        background: #44464D
+    &:active
+        background: #28292C
+
+.button-blur
+    padding: 12px 30px
+    background: rgba(#fff, .08)
+    display: inline-block
+    line-height: 1.15em
+    &:hover, &:focus
+        background: rgba(#fff, .16)
+    &:active
+        background: rgba(#fff, .04)
+
+.button-play
+    padding-left: 52px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border-style: solid
+        border-width: 8px 0 8px 11px
+        border-color: transparent transparent transparent #ffffff
+        left: 30px
+        top: 12px
+
+.button-action
+    padding-left: 54px
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 17px
+        height: 16px
+        background: url(../images/dest/button-arrow.svg) no-repeat center center
+        left: 25px
+        top: 12px
+
+.triangle
+    display: inline-block
+    margin: 0 4px
+    line-height: 1em
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 0 12px 12px
+    border-color: transparent transparent $white transparent
